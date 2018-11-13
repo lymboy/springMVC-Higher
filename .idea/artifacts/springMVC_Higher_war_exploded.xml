@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="springMVC-Higher:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springMVC_Higher_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springMVC-Higher" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="aopalliance-1.0" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.12" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="springMVC-Higher/web/Web" />
+    </root>
+  </artifact>
+</component>
