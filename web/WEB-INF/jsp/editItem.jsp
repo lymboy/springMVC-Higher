@@ -23,7 +23,6 @@
 				<td>商品价格</td>
 				<td><input type="text" name="price" value="${item.price }" /></td>
 			</tr>
-			<%-- 
 			<tr>
 				<td>商品生产日期</td>
 				<td><input type="text" name="createtime"
@@ -36,10 +35,9 @@
 						<img src="/pic/${item.pic}" width=100 height=100/>
 						<br/>
 					</c:if>
-					<input type="file"  name="pictureFile"/> 
+					<input type="file"  name="pictureFile"/>
 				</td>
 			</tr>
-			 --%>
 			<tr>
 				<td>商品简介</td>
 				<td><textarea rows="3" cols="30" name="detail">${item.detail }</textarea>

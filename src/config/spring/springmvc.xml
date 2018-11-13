@@ -11,6 +11,9 @@
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven />
 
+    <!-- SpringMVC的异常处理器 -->
+    <bean class="com.lym.exeception.CustomerException" />
+
     <!-- 配置视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix" value="/WEB-INF/jsp/" />

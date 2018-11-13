@@ -1,5 +1,6 @@
 package com.lym.controller;
 
+import com.lym.exeception.MessageException;
 import com.lym.pojo.Items;
 import com.lym.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,12 @@ public class ItemController {
      */
     @RequestMapping("/itemList.do")
     public ModelAndView queryItemList() {
+
         List<Items> items = itemService.queryItemList();
+
+//        if (null == null) {
+//            throw new MessageException("商品信息不能为空");
+//        }
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("itemList", items);

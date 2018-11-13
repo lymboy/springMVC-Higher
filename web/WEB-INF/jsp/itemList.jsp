@@ -34,6 +34,7 @@
                 <td>${item.name }</td>
                 <td>${item.price }</td>
                 <td><fmt:formatDate value="${item.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                <td><input type="file" value="浏览文件" name="${item.pic}"></td>
                 <td>${item.detail }</td>
                 <td><a href="${pageContext.request.contextPath }/itemEdit.do?id=${item.id}">修改</a></td>
 
